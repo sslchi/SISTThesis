@@ -1,0 +1,113 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+%  请使用xeLaTeX进行编译
+\documentclass[postdoc,oneside]{sistthesis}
+% 选项  postdoc|doctor|master  默认postdoc
+%      onesid|twoside         postdoc 请选单栏(编写规则要求单面)
+
+
+%%% 引用格式使用数字  [1,2] 
+%\usepackage[numbers,comma, sort&compress]{natbib}      
+
+%%% 引用格式使用上标  ^{[1,2]}
+\usepackage[super,square,comma,sort&compress]{natbib} 
+
+%%%使用GBT7714标准的参考文献格式 (按引用顺序排列参考文献)
+\bibliographystyle{gbt-numerical} 
+
+%%%使用GBT7714标准的参考文献格式(按作者-日期排列参考文献)
+%\bibliographystyle{gbt-author-year} 
+
+%\usepackage{hypernat} 
+\usepackage{subfig}
+\usepackage{comment,multirow,float}
+% set search path
+\graphicspath{{pic/}}
+
+%%%%% 分类号等
+\classification{TM13}
+\confidential{不涉密}
+\UDC{}
+\IDnumber{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%  博士后工作报告将此处注释取消
+%%%%%   封面
+%\title{新型有机非线性光学材料的探索~\ \\\ ~ -- 从分子到晶体的材料化学过程~}
+%\author{方奇}
+%\jobbegin{2015年7月22日}
+%\jobend{2018年3月31日}
+%\reportfinish{2015年7月—2018年3月}
+%\submitdate{2018年3月} 
+%%
+%%%%%%% 题名页
+%\englishtitle{THE EXPLORATION FOR NEW ORGANIC NLO\\
+%--MATERIALS TIIE MATERIALS CIIEMISTRY PROCESS\\
+%--FROM MOLECULES TO CRYSTALS}
+%\discipline{电子科学与技术}
+%\major{电磁场与微波技术}
+%\institute{中国科学院上海微系统与信息技术研究所}
+%\address{上海}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%  学位论文将此处注释取消
+%%%%    中文题名页
+%\title{题目}
+%\setitle{Englishi}
+%\setitlee{title}
+%\author{sslchi}
+%\discipline{电子科学与技术}
+%\major{电磁场与微波技术}
+%\research{微分方程数值解}
+%\advisor{指导教师}
+%\school{信息科学与技术学院}
+%\submitdate{2018年3月} 
+
+%%%%     英文题名页
+%\englishtitle{English\\ title}
+%\englishauthor{sslchi}
+%\englishschool{School of Information Science and Technology}
+%\englishsubmitdate{Apr., 2017}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+	
+\maketitle
+\makeenglishtitle
+
+\frontmatter
+%\include{chap/announce}
+\include{chap/abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+\include{chap/notation}
+
+
+%%正文部分
+\mainmatter
+\include{chap/intro}
+\include{chap/basic}
+\include{chap/math}
+\include{chap/tabfig}
+\appendix
+\include{chap/req}
+
+
+\backmatter
+\include{chap/thanks}
+\bibliography{book,journal}
+\addcontentsline{toc}{chapter}{\bibname}
+\include{chap/resume}
+\include{chap/pub}
+
+
+\end{document}
