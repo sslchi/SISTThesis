@@ -1,0 +1,22 @@
+\chapter{引言}
+\texttt{SISTThesis}~宏包的编写缘于笔者需要撰写博士后工作报告。尽管学校/研究所提供了Word格式的工作报告模板，但由于报告中含有大量的数学公式，Word无法满足要求，所以只能寻找\LaTeX 格式的报告模板。笔者在CTEX下载中心找到了吴凌云撰写的宏包\texttt{PostDocRep}，但可能是由于版本的原因(撰写于2009年)，尝试多种编译方式都无法通过编译。于是只好自己尝试着编写了一个模板。由于毕业论文和博士后工作报告的主要差别是封面等，索性将其扩展，使其包含了学位论文的格式。
+
+\texttt{SISTThesis}~宏包主要根据博士后研究工作报告的撰写要求编写，目的是简化博士后研究工作报告的撰写，使作者可以将精力集中到报告的内容上而不是浪费在版面设置上。同时，宏包还参考了其它学校的\LaTeX 论文模板，添加了博（硕）士学位论文的选项（尚未找到上海科技大学的博/硕士学位论文要求）。
+
+因为工作报告参考文献使用GB7714标准，因此文档中还包含了Zeping Lee（李泽平） 编写的参考文献的样式文件\verb|gbt-7714-2015-author-year.bst|（参考文献按照作者-日期排序）以及\verb|gbt-7714-2015-numerical.bst|（参考文献按照引用顺序排序）。
+\section{系统要求}
+SISTThesis 宏包通过 ctex 宏包来获得中文支持。 ctex 宏包提供了一个
+统一的中文\LaTeX 文档框架, 它可以从\url{http://www.ctex.org}网站下载。
+
+此外，SISTThesis 宏包还使用了宏包 amsmath、 amsthm、 amsfonts、
+amssymb、 bm 和 hyperref。
+\section{下载与安装}
+SISTThesis宏包的最新版本可以从\url{https://github.com/sslchi/SISTThesis}下载。
+
+宏包包含一个文档类型文件SISTTheis.cls以及一个使用模板文件main.tex（也即本文的源文件）, 用户
+可以通过修改这个模板来编写自己的学位论文。
+\section{问题反馈}
+用户在使用中遇到问题, 可以联系作者:
+\begin{center}
+      sslchi@126.com
+\end{center}
