@@ -19,3 +19,6 @@
 # 常见错误及解决方法
 1. 中文显示乱码， 检查编码方式需要设置为utf8.
 2. 没有所需字体， 下载字体。
+3. Ubuntu 下报错The font "[SIMKAI.TTF]" cannot be found {SimSun}.
+   双击报错信息，打开ctex-xecjk-winfonts.def, 将里面的部分内容替换：[SIMKAI.TTF] ---> KaiTi, [SIMFNAG.TTF]---> FangSong, 注意方括号。
+ 
